@@ -1,0 +1,717 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+@media screen and (max-width: 480px){
+    .cabecalho, .cabecalho-menu, .conteudo, .home, .projetos, .conteudo-projetos-container-card{
+        width: auto;
+    }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: hsl(240, 100%, 1%);
+}
+
+.conteudo{
+
+}
+
+.cabecalho{
+    position: relative;
+    margin: 20px;
+    max-width: 1024px;
+    min-width: 100px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+   
+}
+
+.cabecalho-menu{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    gap: 70px;
+}
+
+.cabecalho-menu-item{
+    text-decoration: none;
+    color: white;
+    font-family: 'IM Fell English SC', serif;
+    font-size: 17px;
+}
+
+.cabecalho-menu-item:hover{
+    text-align: center;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.cabecalho-menu-item:active{
+    font-size: 110%;
+    color: #ee8f6a;
+}
+
+.logo{
+    align-items: center;
+    justify-content: center;
+}
+
+.home{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container{
+    position: absolute;
+    width: 150px;
+    height: auto;
+    right: 652px;
+    top: -100px;
+}
+#ilustra-topo{
+    width: 800px;
+    margin: 0;
+}
+
+.confident{
+    position: absolute;
+    width: 400px;
+    top: -127px;
+    left: 240px;
+    box-sizing: border-box;
+    max-width: 100%;
+    display: block;
+}
+
+.info-card{
+    top: 100px;
+    width: 500px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 40px 50px;
+    box-shadow: 2px 5px 6px 4px rgba(0, 0, 0, 0.30);
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.info-card .card::before{
+    content: '';
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-right: none;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 20px 0 0 20px;
+}
+
+.info-card .card::after{
+    content: '';
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-left: none;
+    position: absolute;
+    bottom:0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 0 20px 20px 0;
+}
+
+.texto-home{
+    color: white;
+    position: relative;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#texto-home-titulo{
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    font-weight: 550;
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: bold;
+    color: #FFF2E7;
+    text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25); ;
+}
+
+#texto-home-descricao{
+    font-size: 21px;
+    margin: 0px;
+    top: 20px;
+    justify-content: left;
+    font-family: 'IM Fell English', serif;
+
+}
+
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    top: 35px;
+    position: relative;
+    border: none;
+    height: 35px;
+    width: 150px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+#botao-contato{
+    border: none;
+    height: 35px;
+    width: 150px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(207, 207, 207);
+    background-color: rgba(144, 67, 245, 0.52);
+    backdrop-filter: blur(45px);
+}
+#botao-contato:hover{
+    color: wheat;
+    background: linear-gradient(107.21deg, #C961DE 24.43%, #ce4c35 68.95%);
+    box-shadow: 0px 10px 20px rgba(8, 12, 33, 0.15);
+    border-radius: 30px;
+}
+#botao-contato:active{
+    background-color: rgba(143, 101, 241, 0.5);
+    color: black;
+}
+
+#download{
+    border: none;
+    height: 35px;
+    width: 150px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    background: linear-gradient(107.21deg, #b963ca 24.43%, #2954A3 68.95%);
+    box-shadow: 0px 10px 20px rgba(8, 12, 33, 0.15);
+    border-radius: 30px;
+}
+
+#download:hover{
+    cursor: pointer;
+    color: wheat;
+    background: linear-gradient(107.21deg, #c5546c 24.43%, #5139d8 68.95%);
+    box-shadow: 0px 10px 20px rgba(8, 12, 33, 0.15);
+    border-radius: 30px;
+}
+
+.conteudo-projetos{
+    color: white;
+    
+}
+
+.projetos-img-container{
+    box-sizing: border-box;
+    position: absolute;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projetos-img{
+    box-sizing: border-box;
+    position: absolute;
+    top: 650px;
+    width:auto;
+    height: 800px;
+    max-width: 100%;
+    display: block;
+}
+
+.conteudo-projetos-container-card{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projetos-card .p-card{
+    position: relative;
+    top: 410px;
+    width: 650px;
+    height: 250px;
+    background-color: rgba(37, 114, 97, 0.116);
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 2px 5px 6px 4px rgba(0, 0, 0, 0.212);
+    border-radius: 20px;
+}
+
+.projetos-card .p-card::before{
+    content: '';
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-right: none;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 20px 0 0 20px;
+}
+
+.projetos-card .p-card::after{
+    content: '';
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-left: none;
+    position: absolute;
+    bottom:0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 0 20px 20px 0;
+}
+
+.projetos-titulo{
+    text-align: center;
+    font-family: 'IM Fell English', serif;
+    letter-spacing: 2px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.projetos-titulo-descricao{
+    text-align: center;
+    font-family: 'IM Fell English', serif;
+    font-size: 18px;
+
+}
+
+.projetos-list{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    gap: 50px;
+    margin: 10px
+}
+
+.div-dev{
+}
+
+.div-marcas{
+
+}
+
+.div-3{
+}
+
+.sobre-mim-img-container{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.sentada{
+    top: -550px;
+    position:absolute;
+    max-width: 300px;
+    z-index: 9;
+    box-sizing:border-box;
+    left: -100px;
+}
+
+.sobre-mim-img{
+    position: absolute;
+    width: 800px;
+    left: -95px;
+    margin-top: -80px;
+    height: 360px;
+
+}
+
+.sobre-mim{
+    margin-top: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.diamante-img{
+    position: absolute;
+    width: 230px;
+    z-index: 9;
+    margin-left: 434px;
+    top: 7px;
+}
+.sobre-mim-card-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+
+.sobre-mim-card-texto-titulo{
+    color: rgb(204, 204, 204);
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-weight: 550;
+    letter-spacing: 0.5px;
+    margin-top: 0px;
+    font-family: 'IM Fell English', serif;
+}
+
+.sobre-mim-card-texto-descricao{
+    margin-top: 20px;
+    font-weight:;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    font-family: 'IM Fell English', serif;
+    
+}
+.sobre-mim-card .c-card{
+    position: relative;
+    width: 550px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(003px);
+    border-radius: 40px;
+    box-sizing: border-box;
+    padding: 40px 50px;
+    box-shadow: 2px 5px 6px 4px rgba(0, 0, 0, 0.30);
+    border-radius: 20px;
+}
+
+.sobre-mim-card .c-card::before{
+    content: '';
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-right: none;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 20px 0 0 20px;
+}
+
+.sobre-mim-card .c-card::after{
+    content: '';
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-left: none;
+    position: absolute;
+    bottom:0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 0 20px 20px 0;
+}
+
+.c-card-conteudo{
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+
+
+.contato{
+    width: 100%;
+    position: relative;
+    padding: 0px;
+}
+
+.contato-container{
+    width: 100%;
+    position: absolute;
+}
+
+
+.formulario-card{
+    z-index: 9;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.form-contato{
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(18px);
+    box-shadow: 4px 5px 6px 4px rgba(0, 0, 0, 0.699);
+    padding: 25px;
+    border-radius: 15px;
+    z-index: 9;
+    width: 70%;
+}
+
+.fieldset{
+    border: 3px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding:10px;
+}
+
+
+.both-forms{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-right{
+    font-family: 'IM Fell English', serif;
+}
+
+.form-left{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+
+}
+
+.inputBox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.input{
+    background: rgba(255, 255, 255, 0.185);
+    box-shadow: 0px 10px 20px rgba(7, 7, 26, 0.15);
+    border-radius: 10px;
+    border: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+    width: 100%;
+    font-weight: 600;
+    padding: 10px;
+    outline: none;
+    color: white;
+}
+
+.input:focus~.label-input,
+.input:valid ~.label-input{
+    top: -25px;
+    font-size: 12px;
+    color: #a963fa;
+}
+
+.label-input{
+    position: absolute;
+    pointer-events: none;
+    outline: none;
+    top: 0px;
+    margin-top: 8px;
+    transition: .5s;
+    left: 5px;
+    font-size: 15px;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+
+.text-area:focus~.label-text-area,
+.text-area:valid ~.label-text-area{
+    top: 25px;
+    font-size: 12px;
+    color: #a963fa;
+}
+
+.label-text-area{
+    position: relative;
+    text-align: left;
+    bottom: -25px;
+    transition: .5s;
+    left: 5px;
+    color: #8544fde1;
+    font-weight: 600;
+}
+
+.text-area{
+    background: rgba(255, 255, 255, 0.185);
+    box-shadow: 0px 10px 20px rgba(7, 7, 26, 0.15);
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+    width: 100%;
+    padding: 30px;
+    outline: none;
+    color: white;
+}
+
+.botao-submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    font-size: small;
+    letter-spacing: 1px;
+    width: 60%;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    background: linear-gradient(107.21deg, hsla(287, 5%, 37%, 0.726) 24.43%, #3d057e 68.95%);
+}
+
+.submit:hover{
+    color: #9383f1;
+}
+
+.form-right{
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+.form-right-text{
+    color: white;
+
+}
+
+.form-right-text-titulo{
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.form-right-nav{
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.rodape{
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.rodape-img-container{   
+    margin: 0px; 
+    position: relative;
+}
+
+.rodape-img{
+    position: absolute;
+    width: 1000px;
+    box-sizing: border-box;
+    display: flex;
+    right: 0px;
+}
+
+.rodape-card{
+    position: relative;
+    width: 100%;
+    height: 300px;    
+    background-color: rgba(3, 0, 5, 0.219);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 8px 10px 20px rgba(7, 7, 26, 0.15); 
+    box-sizing: border-box;
+    padding: 40px 50px;
+    border: 2px solid rgba(45, 58, 233, 0.1);
+    top: 820px;
+}
+
+.rodape-texto{
+    box-sizing: border-box;
+}
+
+.nav-rodape{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-family: 'IM Fell English SC', serif;
+}
+
+.nav-rodape-menu{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    box-sizing: border-box;
+}
+
+nav-rodape-item{
+}
+
+.rodape-li{
+    cursor: pointer;
+    margin-top: 50px;
+    list-style: none;
+}
+
+.assinatura-rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.assinatura{
+    color: white;
+    margin-top: 100px;
+    font-size: 23px;
+    letter-spacing: 0.5px;
+    font-family: 'IM Fell English', serif;
+}
